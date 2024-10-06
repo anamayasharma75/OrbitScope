@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+#container {
+    width: 100vw;
+    height: calc(100vh - 50px); /* Adjust height to accommodate controls */
+}
+
+#controls {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+}
+
+input[type=range] {
+    margin-left: 10px;
+}
+
+#text-overlay {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    text-align: left;
+    z-index: 1; /* Make sure it appears above the canvas */
+}
+
+#text-overlay h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+#text-overlay h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+#text-overlay p {
+    font-size: 1em;
+}
